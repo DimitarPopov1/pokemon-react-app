@@ -1,0 +1,51 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+  background-color: #ffe066;
+  padding: 12px 24px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+   min-height: 180px;
+}
+.pokemon-icon {
+   color: #ff1c1c;
+   height: 200px;
+   width: 200px;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 180px;
+    margin: 16px;
+    padding: 16px;
+  }
+  .pokemon-card {
+    flex: 0 1 140px;
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    flex-direction: column; /* sidebar on top */
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+  }
+  .card-container {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .pokemon-card {
+    flex: 0 1 45%; /* two cards per row */
+    max-width: 45%;
+  }
+}
