@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
-import "./assets/app.css";
+import './css/app.css';
 
 function App() {
   const [filters, setFilters] = useState({

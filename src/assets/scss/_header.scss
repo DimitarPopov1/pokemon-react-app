@@ -1,0 +1,23 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: $primary-yellow;
+  padding: 12px 24px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: $shadow;
+  min-height: 180px;
+}
+
+.pokemon-icon {
+  color: $primary-red;
+  height: 200px;
+  width: 200px;
+}
